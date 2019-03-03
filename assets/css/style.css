@@ -1,0 +1,199 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+body {
+    font-family: 'Old Standard TT', serif;    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Nav */
+
+.nav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+
+#exit_btn {
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 4em;
+}
+
+.menu-items {
+    text-decoration: none;
+    color: #000;
+}
+
+#home_list {
+    padding-top: 4em;
+}
+
+.show-menu {
+    display: block;
+}
+
+/* keyframes */
+
+
+/* Landing */
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../design/background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#name {
+    padding-top: 220px;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    letter-spacing: 4px;
+}
+
+.slogan {
+    font-family: 'Old Standard TT', serif;    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-spacing: 2px;
+}
+
+#stacked_menu {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+/* About */
+
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../design/blue_background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#about_title {
+    padding-top: 250px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+
+.design,
+.development {
+    width: 100%;
+    height: 100vh;
+}
+
+#design_title,
+#development_title {
+    font-weight: 100;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+#divider_flowers {
+    width: 100%;
+}
+
+.info {
+    font-family: 'Old Standard TT', serif;    font-size: 1.5em;
+}
+
+#blue_divider_1 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#blue_divider_2 {
+    width: 100%;
+
+}
+
+/* Portfolio */
+
+.portfolio {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../design/pink_background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#portfolio_title {
+    padding-top: 250px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+
+.project1,
+.project2,
+.project3 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Contact */
+
+#contact_title {
+    padding-top: 250px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../design/orange_background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100vh;
+}
+
+#form_title {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+#orange_divider {
+    width: 220%;
+    position: absolute;
+    z-index: -1;
+}
