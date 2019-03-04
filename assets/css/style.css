@@ -1,9 +1,11 @@
 /* Global */
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Poppins:200,300');
 
 body {
-    font-family: 'Old Standard TT', serif;    padding: 0;
+    padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -20,6 +22,7 @@ a {
     position: absolute;
     display: none;
     background: #fff;
+    z-index: 1;
 }
 
 #exit_btn {
@@ -57,7 +60,7 @@ li {
 .landing {
     width: 100%;
     height: 100vh;
-    background-image: url(../design/background.jpeg);
+    background-image: url(../design/background_1920.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -69,10 +72,12 @@ li {
     text-align: center;
     margin-bottom: 0.5em;
     letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-.slogan {
-    font-family: 'Old Standard TT', serif;    text-align: center;
+.slogan { 
+    text-align: center;
     font-size: 18px;
     font-weight: 100;
     margin-top: 0;
@@ -90,7 +95,7 @@ li {
 .about-me {
     width: 100%;
     height: 100vh;
-    background-image: url(../design/blue_background.jpeg);
+    background-image: url(../design/blue_background_1920.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -123,7 +128,8 @@ li {
 }
 
 .info {
-    font-family: 'Old Standard TT', serif;    font-size: 1.5em;
+    font-size: 1.5em;
+    padding-left: 0.3em;
 }
 
 #blue_divider_1 {
@@ -136,12 +142,16 @@ li {
 
 }
 
+#development_title {
+    margin-top: 6em;
+}
+
 /* Portfolio */
 
 .portfolio {
     width: 100%;
     height: 100vh;
-    background-image: url(../design/pink_background.jpeg);
+    background-image: url(../design/pink_background_1920.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -196,4 +206,194 @@ li {
     width: 220%;
     position: absolute;
     z-index: -1;
+}
+
+#email_form {
+    width:  90%;
+    border: 0.3px solid black;
+    margin: 0 auto;
+}
+
+#fullname,
+#email,
+#textarea {
+    width: 300px;
+    margin: 1em;
+    padding: 0.3em;
+    border-radius: 4px;
+}
+
+#submit-btn {
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-bottom: 2em;
+    margin-left: 13.333px;
+    background: #fff;
+}
+
+#contact-ul {
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+}
+
+.contact-li {
+    width: 100%;
+    padding: 0.3em;
+    margin: 0;
+    margin-left: 1em;
+}
+
+#github-link {
+    text-decoration: underline;
+}
+
+#linkedin-link {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+
+/* Tablet */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1025px) {
+/* Styles */
+#name,
+#about_title,
+#portfolio_title,
+#contact_title {
+    margin-top: 4em;
+}
+
+#form_title {
+    font-size: 3em;
+}
+
+.contact-li {
+    font-size: 1.4em;
+    margin-left: 1.3em;
+}
+
+#fullname,
+#email,
+#textarea {
+    width: 650px;
+    margin: 1em;
+    padding: 0.3em;
+    border-radius: 4px;
+}
+
+#submit-btn {
+    padding: 3px 100px;
+    margin-left: 230.60px;
+    margin-top: 2em;
+}
+
+.development {
+    margin-top: 5em;
+}
+
+#email_form {
+    padding-left: 5em;
+}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1280px) {
+/* Styles */
+
+body {
+    position: fixed;
+    width: 100%;
+
+}
+
+#name{
+    margin-top: 1em;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 150px;
+    color: #000;
+
+}
+.slogan {
+    font-size: 30px;
+}
+
+.landing-slogan {
+    font-size: 40px;
+    color: #000;
+}
+
+#contact_title {
+    font-size: 100px;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+
+#portfolio_title {
+    font-size: 150px;
+}
+
+#email_form {
+    display: none;
+}
+
+#form_title {
+    position: absolute;
+    top: 500px;
+    left: 47%;
+}
+
+#contact-ul {
+    position: absolute;
+    top: 550px;
+    left: 42%;
+}
+
+#orange_divider {
+    display: none;
+}
+
+#about_title {
+    margin-top: 0;
+    padding: 0;
+}
+
+.design {
+    width: 40%;
+    position: absolute;
+    top: 190px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.development {
+    width: 40%;
+    position: absolute;
+    top: 30px;
+    margin-left: 50%;
+    overflow: hidden;
+}
+
+#blue_divider_1,
+#blue_divider_2,
+#divider_flowers {
+    display: none;
+}
+
+.info {
+    font-size: 1.7em;
+}
+
 }
